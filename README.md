@@ -73,7 +73,7 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 Nest is [MIT licensed](LICENSE).
 
 
-Some cmds i have used
+## Some cmds i have used
 
 ```sh
 
@@ -109,13 +109,3 @@ nest g service prisma --no-spec
 
 ```
 
-`nest g module bookmark`
-`docker compose up dev-db -d`
-`pnpm add prisma -D`
-`pnpm add @prisma/client`
-`npx prisma init`
-`npx prisma migrate dev`
-`npx prisma generate`
-`npx prisma studio `
-`nest g module prisma `
-`nest g service prisma --no-spec`
