@@ -107,5 +107,19 @@ nest g module prisma
 nest g service prisma --no-spec
 
 
+pnpm add class-validator class-transformer
+
+
+pnpm add argon2 
+
+
+pnpm add @nestjs/config
+
+
+pnpm add @nestjs/passport passport @nestjs/jwt passport-jwt
+
+
+pnpm add @types/passport-jwt -D
+
 ```
 
