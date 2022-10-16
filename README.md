@@ -121,5 +121,11 @@ pnpm add @nestjs/passport passport @nestjs/jwt passport-jwt
 
 pnpm add @types/passport-jwt -D
 
+
+pnpm add dotenv-cli -D
+
+
+npx dotenv -e .env.test -- prisma studio
+
 ```
 

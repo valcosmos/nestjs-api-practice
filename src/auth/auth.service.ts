@@ -2,7 +2,7 @@ import { ConfigService } from '@nestjs/config';
 import { AuthDto } from './dto/index.dto';
 import { ForbiddenException, Injectable } from '@nestjs/common';
 import { User, Bookmark } from '@prisma/client';
-import { PrismaService } from 'src/prisma/prisma.service';
+import { PrismaService } from '../prisma/prisma.service';
 import * as argon from 'argon2';
 import { PrismaClientKnownRequestError } from '@prisma/client/runtime';
 import { JwtService } from '@nestjs/jwt';
