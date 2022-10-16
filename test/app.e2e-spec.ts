@@ -1,3 +1,4 @@
+import { EditUserDto } from './../src/user/dto/edit-user.dto';
 import { AuthDto } from './../src/auth/dto/index.dto';
 import { PrismaService } from '../src/prisma/prisma.service';
 import { ValidationPipe } from '@nestjs/common';
@@ -142,7 +143,25 @@ describe('App e2e', () => {
       });
     });
 
-    describe('Edit user', () => {});
+    describe('Edit user', () => {
+      it('should edit user', () => {
+        const dto: EditUserDto = {
+          firstName: 'Cupid',
+          lastName: 'Valentine',
+          email: 'Cupid@admin.com',
+        };
+        return pactum
+          .spec()
+          .patch('/users')
+          .withHeaders({
+            Authorization: 'Bearer $S{userAt}',
+          })
+          .withBody(dto)
+          .expectStatus(200)
+          .expectBodyContains(dto.firstName)
+          .expectBodyContains(dto.email);
+      });
+    });
   });
   describe('Bookmarks', () => {
     describe('Create bookmark', () => {});
