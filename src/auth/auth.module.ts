@@ -1,4 +1,4 @@
-import { JwtStrategy } from './strategy/jet.strategy';
+import { JwtStrategy } from './strategy/jwt.strategy';
 // import { PrismaModule } from './../prisma/prisma.module';
 import { AuthService } from './auth.service';
 import { AuthController } from './auth.controller';

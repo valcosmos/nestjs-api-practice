@@ -1,1 +1,1 @@
-export * from './jet.strategy';
+export * from './jwt.strategy';
